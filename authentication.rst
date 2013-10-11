@@ -13,7 +13,7 @@ Authentication
    .. literalinclude:: examples/token.xml
       :language: xml  
  
-#. Calculate an SHA-512 encrypted string using a combination of the token received in the previous step, the user name and the password::
+#. Calculate an SHA-512 encrypted string using a combination of the token received in the previous step, the user name and the password. This example uses the `jsSHA library <https://github.com/Caligatio/jsSHA/>`_::
 
     shaPassword = new jsSHA(password, "ASCII");
     shaStep1 = new jsSHA(shaPassword.getHash("SHA-512", "HEX"), "ASCII");
@@ -28,7 +28,7 @@ Authentication
    HashedToken: 
       <HASHED-TOKEN>
 
-#. Use the session token as a header for POST requests or as a parameter for GET requests:
+#. Use the session token from the response as a header for POST requests or as a parameter for GET requests that need authorization.
 
     param: 
        Authorization: <SESSION>
