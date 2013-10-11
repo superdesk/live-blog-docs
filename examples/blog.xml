@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlogList total="5" limit="5" offset="0">
+    <Blog href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/1"/>
+    <Blog href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/2"/>
+    <Blog href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/3"/>
+    <Blog href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/4"/>
+    <Blog href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/5"/>
+</BlogList>

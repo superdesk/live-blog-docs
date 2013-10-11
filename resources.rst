@@ -21,20 +21,12 @@ Return information about Blogs.
 
    **Example Response**:
 
-   .. sourcecode:: xml
-
-	<BlogList total="5" limit="5" offset="0">
-		<Blog href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/1"/>
-		<Blog href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/2"/>
-		<Blog href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/3"/>
-		<Blog href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/4"/>
-		<Blog href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/5"/>
-	</BlogList>
-
+   .. literalinclude:: examples/blog.xml
+      :language: xml  
 
    :query offset: Blog offset. Integer, default 0.
    :query limit: Number of Blogs to show. Integer.
-   :reqheader Authorization: Session authorization token.
+   :reqheader Authorization: Session authorization token, see :ref:`Authentication`
    :statuscode 200: Success
 
 .. http:get:: /Blog/(int:id)
@@ -50,7 +42,8 @@ Return information about Blogs.
 
    **Example Response**:
 
-   .. sourcecode:: xml
+   .. literalinclude:: examples/blog.4.xml
+      :language: xml  
 
 
 
