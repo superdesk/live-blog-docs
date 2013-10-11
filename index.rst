@@ -3,20 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Live Blog RESTful API's documentation!
+Live Blog RESTful API
 =================================================
 
-Contents:
+A guide to using the Live Blog RESTful API.
 
 .. toctree::
    :maxdepth: 2
+	
+   README.rst
+   authentication.rst
+   resources.rst
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+.. * :ref:`search`
