@@ -11,7 +11,7 @@ Resources
   
    .. sourcecode:: http
 
-      GET /resources 
+      GET /resources HTTP/1.1
       Host: http://doc.sd-demo.sourcefabric.org/resources
 
    **Example Response**:
@@ -32,7 +32,7 @@ Resources related to Blogs.
   
    .. sourcecode:: http
 
-      GET /Blog 
+      GET /Blog HTTP/1.1
       Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
 
    **Example Response**:
@@ -50,7 +50,7 @@ Resources related to Blogs.
   
    .. sourcecode:: http
 
-      GET /HR/User/5/Blog 
+      GET /HR/User/5/Blog HTTP/1.1
       Host: http://doc.sd-demo.sourcefabric.org/resources/
 
    **Example Response**:
@@ -68,7 +68,7 @@ Resources related to Blogs.
   
    .. sourcecode:: http
 
-      GET /HR/User/5/Blog/Live 
+      GET /HR/User/5/Blog/Live HTTP/1.1
       Host: http://doc.sd-demo.sourcefabric.org/resources/
 
    **Example Response**:
@@ -86,7 +86,7 @@ Resources related to Blogs.
   
    .. sourcecode:: http
 
-      GET /Blog/4 
+      GET /Blog/4 HTTP/1.1
       Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
 
    **Example Response**:
@@ -108,7 +108,7 @@ Posts
   
    .. sourcecode:: http
 
-      GET /Blog/4/Post/Published 
+      GET /Blog/4/Post/Published HTTP/1.1
       Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
 
    **Example Response**:
@@ -126,7 +126,7 @@ Posts
   
    .. sourcecode:: http
 
-      POST /Blog/4/Post/
+      POST /Blog/4/Post/ HTTP/1.1
       Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
 
    :reqheader Authorization: Session authorization token, see :ref:`Authentication`
@@ -139,7 +139,7 @@ Posts
   
    .. sourcecode:: http
 
-      POST /Blog/4/Post/
+      POST /Blog/4/Post/ HTTP/1.1
       Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
 
    :reqheader Authorization: Session authorization token, see :ref:`Authentication`
