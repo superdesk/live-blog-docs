@@ -1,10 +1,12 @@
 Resources
 ====================
-Some text.
+
+Some of the Live Blog resources.
 
 Blogs
 --------
-Some text.
+
+Return information about Blogs.
 
 .. http:get:: /Blog
    
@@ -39,3 +41,20 @@ Some text.
 
    Shows information about Blog `id`.
 
+   **Example Request**:
+  
+   .. sourcecode:: http
+
+      GET /Blog/4 HTTP/1.1
+      Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
+
+   **Example Response**:
+
+   .. sourcecode:: xml
+
+
+
+   :query offset: Blog offset. Integer, default 0.
+   :query limit: Number of Blogs to show. Integer.
+   :reqheader Authorization: Session authorization token.
+   :statuscode 200: Success

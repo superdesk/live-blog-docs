@@ -10,9 +10,11 @@ A guide to using the Live Blog RESTful API.
 
 .. toctree::
    :maxdepth: 2
-	
-   README.rst
+
    authentication.rst
    resources.rst
+	
+.. README.rst
+
 
 .. * :ref:`search`
