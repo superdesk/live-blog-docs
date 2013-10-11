@@ -1,12 +1,28 @@
 Resources
 ====================
 
-Some of the Live Blog resources.
+.. |params| replace:: Get a complete list of parameters by adding ``&params=show`` to your request.
+
+.. http:get:: /resources
+
+   See a complete list of resources available on the server.
+
+   **Example Request**:
+  
+   .. sourcecode:: http
+
+      GET /resources 
+      Host: http://doc.sd-demo.sourcefabric.org/resources
+
+   **Example Response**:
+
+   .. literalinclude:: examples/resources.xml
+      :language: xml  
 
 Blogs
 --------
 
-Return information about Blogs.
+Resources related to Blogs.
 
 .. http:get:: /Blog
    
@@ -16,7 +32,7 @@ Return information about Blogs.
   
    .. sourcecode:: http
 
-      GET /Blog HTTP/1.1
+      GET /Blog 
       Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
 
    **Example Response**:
@@ -24,12 +40,43 @@ Return information about Blogs.
    .. literalinclude:: examples/blog.xml
       :language: xml  
 
-   Find a complete list of parameters by adding ``&params=show`` to your request.
+   |params|
 
-   :query offset: Blog offset. Integer, default 0.
-   :query limit: Number of Blogs to show. Integer.
-   :reqheader Authorization: Session authorization token, see :ref:`Authentication`
-   :statuscode 200: Success
+.. http:get:: /HR/User/(int:id)/Blog
+
+   Lists blogs assigned to user `id`.
+
+   **Example Request**:
+  
+   .. sourcecode:: http
+
+      GET /HR/User/5/Blog 
+      Host: http://doc.sd-demo.sourcefabric.org/resources/
+
+   **Example Response**:
+
+   .. literalinclude:: examples/user.blog.xml
+      :language: xml  
+
+   |params|
+
+.. http:get:: /HR/User/(int:id)/Blog/Live
+
+   Lists live blogs assigned to user `id`.
+
+   **Example Request**:
+  
+   .. sourcecode:: http
+
+      GET /HR/User/5/Blog/Live 
+      Host: http://doc.sd-demo.sourcefabric.org/resources/
+
+   **Example Response**:
+
+   .. literalinclude:: examples/user.blog.live.xml
+      :language: xml  
+
+   |params|
 
 .. http:get:: /Blog/(int:id)
 
@@ -39,7 +86,7 @@ Return information about Blogs.
   
    .. sourcecode:: http
 
-      GET /Blog/4 HTTP/1.1
+      GET /Blog/4 
       Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
 
    **Example Response**:
@@ -47,9 +94,52 @@ Return information about Blogs.
    .. literalinclude:: examples/blog.4.xml
       :language: xml  
 
-   Find a complete list of parameters by adding ``&params=show`` to your request.
+   |params|
 
-   :query offset: Blog offset. Integer, default 0.
-   :query limit: Number of Blogs to show. Integer.
-   :reqheader Authorization: Session authorization token.
-   :statuscode 200: Success
+Posts
+--------------------------
+
+
+.. http:get:: /Blog/(int:id)/Post/Published
+
+   Shows all published posts on Blog `id`.
+
+   **Example Request**:
+  
+   .. sourcecode:: http
+
+      GET /Blog/4/Post/Published 
+      Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
+
+   **Example Response**:
+
+   .. literalinclude:: examples/blog.4.post.published.xml
+      :language: xml  
+
+   |params|
+
+.. http:post /Blog/(int:id)/Post
+
+   Insert a post into Blog `id`, but do not publish it.
+
+   **Example Request**:
+  
+   .. sourcecode:: http
+
+      POST /Blog/4/Post/
+      Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
+
+   :reqheader Authorization: Session authorization token, see :ref:`Authentication`
+
+.. http:post /Blog/(int:id)/Post/Publish
+
+   Insert a post into Blog `id` and publish it immediately.
+
+   **Example Request**:
+  
+   .. sourcecode:: http
+
+      POST /Blog/4/Post/
+      Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
+
+   :reqheader Authorization: Session authorization token, see :ref:`Authentication`
