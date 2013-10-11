@@ -28,8 +28,6 @@ Authentication
    HashedToken: 
       <HASHED-TOKEN>
 
-   The response is a session.
-
 #. Use the session token as a header for POST requests or as a parameter for GET requests:
 
     param: 
