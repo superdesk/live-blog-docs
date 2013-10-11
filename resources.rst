@@ -45,8 +45,6 @@ Return information about Blogs.
    .. literalinclude:: examples/blog.4.xml
       :language: xml  
 
-
-
    :query offset: Blog offset. Integer, default 0.
    :query limit: Number of Blogs to show. Integer.
    :reqheader Authorization: Session authorization token.
