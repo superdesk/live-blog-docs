@@ -20,9 +20,13 @@ In this example we request a complete list of Blogs hosted at the demo Live Blog
      GET http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/4
      GET http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/5
 
+   Excerpt response from Blog 5:
+
    .. literalinclude:: examples/blog.5.xml
       :language: xml
       :lines: 1-7
+
+   Excerpt response from Blog 4:
 
    .. literalinclude:: examples/blog.4.xml
       :language: xml
@@ -47,6 +51,6 @@ In this example we request a complete list of Blogs hosted at the demo Live Blog
    .. literalinclude:: examples/post.72.xml 
        :language: xml
 
-#. You get complete the information about the Author, Type of Blog post, etc by following the links in the response.
+#. Complete the information about the Author, Type of Blog post, etc by following the links in the response.
 
 See :ref:`Resources` for more information.
