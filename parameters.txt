@@ -1,0 +1,30 @@
+:query thumbSize: A string specifying thu
+:query offseta int value
+:query limita int value
+:query detaileda bool value
+:query deletedOna datetime value
+:query deletedOn.sincea datetime value
+:query deletedOn.untila datetime value
+:query searcha str value
+:query search.ilikea str value
+:query cIda str value
+:query cId.sincea str value
+:query cId.untila str value
+:query createdOna datetime value
+:query createdOn.sincea datetime value
+:query createdOn.untila datetime value
+:query isModifieda bool value
+:query ordera str value
+:query order.sincea str value
+:query order.untila str value
+:query contenta str value
+:query content.ilikea str value
+:query publishedOna datetime value
+:query publishedOn.sincea datetime value
+:query publishedOn.untila datetime value
+:query updatedOna datetime value
+:query updatedOn.sincea datetime value
+:query updatedOn.untila datetime value
+:query desccId,order
+:query asccreatedOn,updatedOn,deletedOn
+:query descpublishedOn,content

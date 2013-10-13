@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Blog>
+  <Id>5</Id>
+  <IsLive>False</IsLive>
+  <Description>The testing description</Description>
+  <Title>The testing test</Title>
+  <CreatedOn>10/4/13 12:58 PM</CreatedOn>
+  <Creator href="http://doc.sd-demo.sourcefabric.org/resources/HR/User/2">
+    <Id>2</Id>
+  </Creator>
+  <Language href="http://doc.sd-demo.sourcefabric.org/resources/Localization/Language/3">
+    <Id>3</Id>
+  </Language>
+  <Type href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/BlogType/1">
+    <Id>1</Id>
+  </Type>
+  <Collaborator href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/5/Collaborator/"/>
+  <CollaboratorPotential href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/5/Collaborator/Potential"/>
+  <Sync href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/5/Sync/"/>
+  <Configuration href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/5/Configuration/"/>
+  <Post href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/5/Post/"/>
+  <PostComment href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/5/Post/Comment"/>
+  <PostPublished href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/5/Post/Published"/>
+  <PostUnpublished href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/5/Post/Unpublished"/>
+  <CommentPost href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/5/Comment/Post/"/>
+  <Source href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/5/Source/"/>
+  <BlogMedia href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/5/BlogMedia/"/>
+</Blog>

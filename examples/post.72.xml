@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Post>
+  <Id>72</Id>
+  <IsModified>False</IsModified>
+  <IsPublished>True</IsPublished>
+  <CId>186</CId>
+  <Order>30.0</Order>
+  <AuthorName>Janet Editor</AuthorName>
+  <Content>test</Content>
+  <Meta>{}</Meta>
+  <CreatedOn>7/16/13 12:50 PM</CreatedOn>
+  <PublishedOn>7/16/13 12:50 PM</PublishedOn>
+  <Author href="http://doc.sd-demo.sourcefabric.org/resources/Data/Collaborator/10">
+    <Id>10</Id>
+  </Author>
+  <AuthorPerson href="http://doc.sd-demo.sourcefabric.org/resources/HR/Person/2">
+    <Id>2</Id>
+  </AuthorPerson>
+  <Blog href="http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog/4">
+    <Id>4</Id>
+  </Blog>
+  <Creator href="http://doc.sd-demo.sourcefabric.org/resources/HR/User/2">
+    <Id>2</Id>
+  </Creator>
+  <Type href="http://doc.sd-demo.sourcefabric.org/resources/Data/PostType/wrapup">
+    <Key>wrapup</Key>
+  </Type>
+</Post>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<User>
+  <Id>5</Id>
+  <Active>True</Active>
+  <EMail>Sarah.Stringer@email.addr</EMail>
+  <FirstName>Sarah</FirstName>
+  <FullName>Sarah Stringer</FullName>
+  <LastName>Stringer</LastName>
+  <Name>stringer</Name>
+  <CreatedOn>7/2/13 11:43 AM</CreatedOn>
+  <Type href="http://doc.sd-demo.sourcefabric.org/resources/HR/UserType/standard">
+    <Key>standard</Key>
+  </Type>
+  <Role href="http://doc.sd-demo.sourcefabric.org/resources/HR/User/5/Role/"/>
+  <Right href="http://doc.sd-demo.sourcefabric.org/resources/HR/User/5/Right/"/>
+  <Blog href="http://doc.sd-demo.sourcefabric.org/resources/HR/User/5/Blog/"/>
+  <BlogLive href="http://doc.sd-demo.sourcefabric.org/resources/HR/User/5/Blog/Live"/>
+  <Action href="http://doc.sd-demo.sourcefabric.org/resources/HR/User/5/Action/"/>
+  <Post href="http://doc.sd-demo.sourcefabric.org/resources/HR/User/5/Post/"/>
+  <PostPublished href="http://doc.sd-demo.sourcefabric.org/resources/HR/User/5/Post/Published"/>
+  <PostUnpublished href="http://doc.sd-demo.sourcefabric.org/resources/HR/User/5/Post/Unpublished"/>
+  <Collaborator href="http://doc.sd-demo.sourcefabric.org/resources/HR/User/5/Collaborator/"/>
+  <MetaDataIcon href="http://doc.sd-demo.sourcefabric.org/resources/HR/Person/5/MetaData/Icon"/>
+</User>

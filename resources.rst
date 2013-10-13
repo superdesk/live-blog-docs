@@ -1,3 +1,5 @@
+.. _Resources:
+
 Resources
 ====================
 
@@ -12,7 +14,7 @@ Resources
    .. sourcecode:: http
 
       GET /resources HTTP/1.1
-      Host: http://doc.sd-demo.sourcefabric.org/resources
+      Host: http://doc.sd-demo.sourcefabric.org
 
    **Example Response**:
 
@@ -24,7 +26,7 @@ Blogs
 
 Resources related to Blogs.
 
-.. http:get:: /Blog
+.. http:get:: /resources/LiveDesk/Blog
    
    Lists available blogs.
 
@@ -32,8 +34,8 @@ Resources related to Blogs.
   
    .. sourcecode:: http
 
-      GET /Blog HTTP/1.1
-      Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
+      GET /resources/LiveDesk/Blog HTTP/1.1
+      Host: http://doc.sd-demo.sourcefabric.org
 
    **Example Response**:
 
@@ -42,7 +44,7 @@ Resources related to Blogs.
 
    |params|
 
-.. http:get:: /HR/User/(int:id)/Blog
+.. http:get:: /resources/HR/User/(int:id)/Blog
 
    Lists blogs assigned to user `id`.
 
@@ -50,8 +52,8 @@ Resources related to Blogs.
   
    .. sourcecode:: http
 
-      GET /HR/User/5/Blog HTTP/1.1
-      Host: http://doc.sd-demo.sourcefabric.org/resources/
+      GET /resources/HR/User/5/Blog HTTP/1.1
+      Host: http://doc.sd-demo.sourcefabric.org
 
    **Example Response**:
 
@@ -60,7 +62,7 @@ Resources related to Blogs.
 
    |params|
 
-.. http:get:: /HR/User/(int:id)/Blog/Live
+.. http:get:: /resources/HR/User/(int:id)/Blog/Live
 
    Lists live blogs assigned to user `id`.
 
@@ -68,8 +70,8 @@ Resources related to Blogs.
   
    .. sourcecode:: http
 
-      GET /HR/User/5/Blog/Live HTTP/1.1
-      Host: http://doc.sd-demo.sourcefabric.org/resources/
+      GET /resources/HR/User/5/Blog/Live HTTP/1.1
+      Host: http://doc.sd-demo.sourcefabric.org
 
    **Example Response**:
 
@@ -78,7 +80,7 @@ Resources related to Blogs.
 
    |params|
 
-.. http:get:: /Blog/(int:id)
+.. http:get:: /resouces/LiveDesk/Blog/(int:id)
 
    Shows information about Blog `id`.
 
@@ -86,8 +88,8 @@ Resources related to Blogs.
   
    .. sourcecode:: http
 
-      GET /Blog/4 HTTP/1.1
-      Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
+      GET /resources/LiveDesk/Blog/4 HTTP/1.1
+      Host: http://doc.sd-demo.sourcefabric.org
 
    **Example Response**:
 
@@ -100,7 +102,7 @@ Posts
 --------------------------
 
 
-.. http:get:: /Blog/(int:id)/Post/Published
+.. http:get:: /resouces/LiveDesk/Blog/(int:id)/Post/Published
 
    Shows all published posts on Blog `id`.
 
@@ -108,8 +110,8 @@ Posts
   
    .. sourcecode:: http
 
-      GET /Blog/4/Post/Published HTTP/1.1
-      Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
+      GET /resources/LiveDesk/Blog/4/Post/Published HTTP/1.1
+      Host: http://doc.sd-demo.sourcefabric.org
 
    **Example Response**:
 
@@ -118,7 +120,7 @@ Posts
 
    |params|
 
-.. http:post /Blog/(int:id)/Post
+.. http:post:: /resources/LiveDesk/Blog/(int:id)/Post
 
    Insert a post into Blog `id`, but do not publish it.
 
@@ -126,12 +128,12 @@ Posts
   
    .. sourcecode:: http
 
-      POST /Blog/4/Post/ HTTP/1.1
-      Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
+      POST /resources/LiveDesk/Blog/4/Post/ HTTP/1.1
+      Host: http://doc.sd-demo.sourcefabric.org
 
    :reqheader Authorization: Session authorization token, see :ref:`Authentication`
 
-.. http:post /Blog/(int:id)/Post/Publish
+.. http:post:: /resources/LiveDesk/Blog/(int:id)/Post/Publish
 
    Insert a post into Blog `id` and publish it immediately.
 
@@ -139,7 +141,28 @@ Posts
   
    .. sourcecode:: http
 
-      POST /Blog/4/Post/ HTTP/1.1
-      Host: http://doc.sd-demo.sourcefabric.org/resources/LiveDesk
+      POST /resources/LiveDesk/Blog/4/Post/ HTTP/1.1
+      Host: http://doc.sd-demo.sourcefabric.org
 
    :reqheader Authorization: Session authorization token, see :ref:`Authentication`
+
+Users
+------------------------------
+
+.. http:get:: /resources/HR/User/(int:id)
+
+   Show information about user `id`.
+
+   **Example Request**:
+  
+   .. sourcecode:: http
+
+      GET /resources/HR/User/5 HTTP/1.1
+      Host: http://doc.sd-demo.sourcefabric.org
+
+   **Example Response**:
+
+   .. literalinclude:: examples/user.5.xml
+      :language: xml  
+
+   |params|
