@@ -80,7 +80,7 @@ Resources related to Blogs.
 
    |params|
 
-.. http:get:: /resouces/LiveDesk/Blog/(int:id)
+.. http:get:: /resources/LiveDesk/Blog/(int:id)
 
    Shows information about Blog `id`.
 
@@ -102,7 +102,7 @@ Posts
 --------------------------
 
 
-.. http:get:: /resouces/LiveDesk/Blog/(int:id)/Post/Published
+.. http:get:: /resources/LiveDesk/Blog/(int:id)/Post/Published
 
    Shows all published posts on Blog `id`.
 
