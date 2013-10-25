@@ -21,6 +21,8 @@ Authentication
     HashedToken = shaStep1.getHMAC(username, "ASCII", "SHA-512", "HEX");            
     HashedToken = shaStep2.getHMAC(HashedToken, "ASCII", "SHA-512", "HEX");
 
+   For example code in Python see :ref:`python-example`.
+
 #. Make a POST request to `Security/Authentication/Login <http://doc.sd-demo.sourcefabric.org/resources/Security/Authentication/Login>`_ with the following parameters:
 
    Token: 
