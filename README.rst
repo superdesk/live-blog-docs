@@ -7,7 +7,7 @@ In this example we request a complete list of Blogs hosted at the demo Live Blog
 
 #. Get the list of Blogs from server::
 
-     GET http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog``
+    GET http://doc.sd-demo.sourcefabric.org/resources/LiveDesk/Blog
    
    .. literalinclude:: examples/blog.xml
       :language: xml
